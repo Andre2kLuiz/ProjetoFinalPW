@@ -2,7 +2,7 @@ package com.projetopw.projetofinalpw.domain;
 
 import java.util.List;
 
-import jakarta.persistence.Entity;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -12,8 +12,12 @@ import lombok.NoArgsConstructor;
 @Entity
 @Data
 public class Pedido {
+    @Id
+    @GeneratedValue(strategy = GenerationType.UUID)
     String id;
+    @ManyToMany
     List<Figure> figures;
+    @ManyToOne
     Usuario usuario;
     Float valorTotal;
 }
