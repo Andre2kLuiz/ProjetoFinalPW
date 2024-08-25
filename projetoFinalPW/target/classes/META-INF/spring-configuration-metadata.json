@@ -1,0 +1,22 @@
+{
+  "groups": [
+    {
+      "name": "rsa",
+      "type": "com.projetopw.projetofinalpw.core.security.RsaKeyProperties",
+      "sourceType": "com.projetopw.projetofinalpw.core.security.RsaKeyProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "rsa.private-key",
+      "type": "java.security.interfaces.RSAPrivateKey",
+      "sourceType": "com.projetopw.projetofinalpw.core.security.RsaKeyProperties"
+    },
+    {
+      "name": "rsa.public-key",
+      "type": "java.security.interfaces.RSAPublicKey",
+      "sourceType": "com.projetopw.projetofinalpw.core.security.RsaKeyProperties"
+    }
+  ],
+  "hints": []
+}
